@@ -7,6 +7,7 @@ public class Statistics {
 
   // Le nombre le plus petit de lancers pour avoir gagné une partie
   private int fewerMovesToWin;
+
   // Le nombre le plus grand de lancers pour avoir gagné une partie
   private int mostMovesToWin;
 
@@ -52,4 +53,13 @@ public class Statistics {
     this.totalNumberMoves = totalNumberMoves;
   }
 
+  @Override
+  public String toString() {
+    return "Statistics{" +
+            "averageToWin=" + averageToWin +
+            ", fewerMovesToWin=" + fewerMovesToWin +
+            ", mostMovesToWin=" + mostMovesToWin +
+            ", totalNumberMoves=" + totalNumberMoves +
+            '}';
+  }
 }
